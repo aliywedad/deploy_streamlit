@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 load_dotenv(dotenv_path=os.path.join(os.path.dirname(__file__), "../../.env"))
 
-API_KEY = os.getenv("MISTRAL_API_KEY")  or st.secrets["MISTRAL_API_KEY"]
+API_KEY =   st.secrets["MISTRAL_API_KEY"]
 MODEL = "mistral-large-latest"
 
 SYSTEM_PROMPT = {
